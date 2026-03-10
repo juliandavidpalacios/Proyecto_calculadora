@@ -13,7 +13,7 @@ class Calculadora:
 
     def dividir(self, a, b):
         if b == 0:
-            return "Error: No se puede dividir por cero."
+            return "Error: No se puede dividir por cero000000."
         return a / b
 
 # --- Ejemplo de uso ---
