@@ -14,17 +14,33 @@ class Presenter:
         """Flujo de la operación suma [20, 22]."""
         try:
             v1, v2 = self.vista.entrada()
-            resultado = self.modelo.suma(v1, v2)
+            resultado = self.modelo.sumar(v1, v2)
             self.vista.salida(resultado)
         except Exception as e:
             self.vista.mensaje('Error', str(e))
 
     def fresta(self):
-        """Flujo de la operación suma [20, 22]."""
         try:
             v1, v2 = self.vista.entrada()
-            resultado = self.modelo.resta(v1, v2)
+            resultado = self.modelo.restar(v1, v2)
             self.vista.salida(resultado)
         except Exception as e:
             self.vista.mensaje('Error', str(e))
+
+    def fmult(self):
+        try:
+            v1, v2 = self.vista.entrada()
+            resultado = self.modelo.multiplicar(v1, v2)
+            self.vista.salida(resultado)
+        except Exception as e:
+            self.vista.mensaje('Error', str(e))
+
+    def fdiv(self):
+        try:
+            v1, v2 = self.vista.entrada()
+            resultado = self.modelo.dividir(v1, v2)
+            self.vista.salida(resultado)
+        except Exception as e:
+            self.vista.mensaje('Error', str(e))
+
     # TODO: Implementar fresta(), fmult() y fdiv() [23], [22]
